@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>    
+    <!-- JS axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+    <!-- JS file linked to HTML-->
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header class="row">
+            <h1>F1 Racer API Data</h1>
+        </header>
+
+        <!-- FORM -->
+        <div class="form-search">    
+            <form class="row g-3">
+                <div class="col-12">
+                <label for="inputSeason" class="form-label">Season</label>
+                <input type="text" class="form-control" id="year" placeholder="please enter the year">
+                </div>
+                <div class="col-12">
+                <label for="inputRound" class="form-label">Round</label>
+                <input type="text" class="form-control" id="round" placeholder="please enter the round">
+                </div>
+                <div class="col-12">
+                <button type="submit" class="btn btn-primary" id="search">SEARCH</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- TABLES -->
+        <div class="tables">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Date of Birth</th>
+                    <th scope="col">Position</th>
+                    <th scope="col">Wins</th>
+                    <th scope="col">Nationality</th>
+                    <th scope="col">Constructor</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- <tr>
+                    <th scope="row">1</th>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                  </tr> -->
+                </tbody>
+              </table>
+        </div>
+
+    </div>
+</body>
+</html>
